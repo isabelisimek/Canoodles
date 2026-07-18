@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ptg-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CanoodleCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <title>Canoodles</title>
+</head>
+
+<body>
+    <div class="inicio">
+        <nav>
+            <p id="title">Canoodles</p>
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <p>Comprar</p>
+                </li>
+                <li class="li-nav">
+                    <p>Sobre</p>
+                </li>
+                <li class="li-nav">
+                    <p>Avaliações</p>
+                </li>
+            </ul>
+            <div class="icones-nav">
+                <img src="imagens_canoodles/Lupa.png" alt="Lupa azul">
+                <img src="imagens_canoodles/Carrinho.png" alt="Carrinho azul">
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h1>Canoodles</h1>
+                <p>Para qualquer canudo, Canoodles</p>
+
+                <form class="form-hero">
+                    <input type="text" id="Pesquisar" placeholder="Pesquisar canudo">
+                    <button id='Lupa_pesquisa' type="submit" class="botao-hero"><img
+                            src="imagens_canoodles/Lupa_pesquisa.png" alt="Lupa"></button>
+                </form>
+            </section>
+
+    </div>
+
+    <section class="sobre">
+        <h2>Um único lugar que reúne todo <br> e qualquer tipo de canudo</h2>
+        <div class="cards">
+            <div class="card-canudo">
+                <img src="imagens_canoodles/descartavel_cortado.jpeg" alt="Canudo descartável">
+                <p>Canudos <br> Descartáveis</p>
+            </div>
+            <img src="imagens_canoodles/seta_esquerda.png" alt="Seta para esquerda" class="seta">
+            <div class="card-canudo">
+                <img src="imagens_canoodles/reutilizavel_cortado.jpeg" alt="Canudo Reutilizável">
+                <p>Canudos <br> Reutilizáveis</p>
+            </div>
+            <img src="imagens_canoodles/seta_direita.png" alt="Seta para direita" class="seta">
+            <div class="card-canudo">
+                <img src="imagens_canoodles/piscina_cortado.jpeg" alt="Canudo de piscina">
+                <p>Canudos <br> de Piscina</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="diferencial">
+        <h2>Diferencial</h2>
+        <div class="grid-diferencial">
+
+            <div class="box card_mat">
+                <h3 id="Mat">
+                    Materiais de <br> qualidade:
+                    <img src="imagens_canoodles/simbolo_mat.png" alt="símbolo de tecido" id="icone_mat">
+                </h3>
+                <p>Desde o metal dos canudos reutilizáveis, a espuma dos canudos de piscina e os ingredientes
+                    dos canudinhos de maionese, todos os produtos são rigorosamente e éticamente selecionados,
+                    para garantir uma boa experiência para você e para o mundo.</p>
+            </div>
+
+            <div class="box card_pers">
+                <h3 id="Pers">
+                    Personálizavel:
+                    <img src="imagens_canoodles/simbolo_pers.png" alt="símbolo de lápis e régua" id="icone_pers">
+                </h3>
+                <p>Para os canulovers de todo o Brasil, com a Canoodles, é possível fazer o seu próprio canudo,
+                    100% personálizavel!</p>
+            </div>
+
+            <div class="box card_facil">
+                <h3 id="Facil">
+                    Facilidade:
+                    <img src="imagens_canoodles/simbolo_facil.png" alt="símbolo de verificação" id="icone_facil">
+                </h3>
+                <p>Um lugar feito para todos os fãs de canudos que haviam dificuldade de encontrar todos os produtos
+                    que precisavam em um lugar só. Agora, tudo se tornou mais fácil.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="depoimento">
+        <h2>Relato dos nossos clientes</h2>
+        <div class="depoimento_texto">
+            <p id="texto_joao">“Os melhores canudos de piscina que ja comprei na vida,
+                além dos canudos de maionese mais gostosos!”</p>
+            <p id="nome_joao">João Pedro Amaral, 27 anos</p>
+            <p id="texto_julia">“Nunca mais fiquei sem canudo após comprar os canudos da Canoodles.”</p>
+            <p id="nome_julia">Júlia Rosa, 17 anos</p>
+            <p id="texto_clara">“Sempre que eu precisava de algum tipo de canudo, eu tinha muita dificuldade em achar,
+                mas,
+                agora, com a Canoodles, issso se tornou muito mais fácil.”</p>
+            <p id="nome_clara">Clara da Silva, 32 anos</p>
+        </div>
+    </section>
+
+    <section class="compra">
+
+        <div class="pesquisa-compra">
+
+            <form action="/search" class="form-pesquisa">
+                <input id='pesquisa compra' type="text" placeholder="Pesquisar canudo">
+                <button type="submit">
+                    <img src="imagens_canoodles/Lupa_compra.png" alt="Lupa cinza">
+                </button>
+            </form>
+
+            <button class="botãofiltro">Filtrar
+                <img src="imagens_canoodles/seta filtro.png" alt="Seta para baixo">
+            </button>
+
+        </div>
+
+        <div class="grid-compra">
+            <section class="item">
+                <img src="imagens_canoodles/reutilizavel.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo Reutilizável</p>
+                <p class="nome-produto">Canudo Reutilizável <br> de Metal</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$50,00</p>
+            </section>
+
+            <section class="item">
+                <img src="imagens_canoodles/descartavel.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo descartável</p>
+                <p class="nome-produto">Canudo Descartável <br> de Papel</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$20,00</p>
+            </section>
+
+            <section class="item">
+                <img src="imagens_canoodles/festa.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo Divertido</p>
+                <p class="nome-produto">Canudo Divertido <br> de Festa</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$35,00</p>
+            </section>
+
+            <section class=" item">
+                <img src="imagens_canoodles/piscina.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo de Piscina</p>
+                <p class="nome-produto">Canudo de Piscina</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$10,00</p>
+            </section>
+
+            <section class="item">
+                <img src="imagens_canoodles/maionese.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo Comestível</p>
+                <p class="nome-produto">Canudo de Maionese</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$20,00</p>
+            </section>
+
+            <section class="item">
+                <img src="imagens_canoodles/formatura.jpeg" alt="Canudo reutilizavel">
+                <p class="classificação">Canudo Formatura</p>
+                <p class="nome-produto">Canudo Graduação</p>
+                <div class="avaliacao">
+                    <span class="estrelas">★★★★★</span>
+                    <button class="botãomais">
+                        <img src="imagens_canoodles/Botão +.png"
+                            alt="Botão circular azul com um símbolo de mais branco no meio">
+                    </button>
+                </div>
+                <p class="preço">R$30,00</p>
+            </section>
+        </div>
+
+        <section class="números">
+            <img src="imagens_canoodles/seta_esquerda_compra.png" alt="Seta para a esquerda">
+            <ul>
+                <li class="ativo">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <img src="imagens_canoodles/seta_direita_compra.png" alt="Seta para a direita">
+        </section>
+
+    </section>
+
+    <footer>
+
+        <div class="coluna_esquerda">
+            <h2>Canoodles</h2>
+
+            <div class="contato">
+                <p id="contate_nos" class="ContTitle">Contate-nos:</p>
+
+                <div class="forms-contato">
+                    <form action="https://www.google.com/search">
+                        <input type="text" id="Nome" placeholder="Nome">
+                    </form>
+
+                    <form action="https://www.google.com/search" class="form_canudo">
+                        <input type="email" id="email" placeholder="E-mail">
+                    </form>
+
+                    <form action="https://www.google.com/search" class="form_numero">
+                        <input type="text" id="número" placeholder="Número">
+                    </form>
+                </div>
+            </div>
+
+            <div class="redes_sociais">
+                <p id="siga_nos" class="ContTitle">Siga-nos:</p>
+                <a href="#"><img src="imagens_canoodles/insta [Vectorized].png" alt="Logo do Instagram em azul"></a>
+                <a href="#"><img src="imagens_canoodles/twitter [Vectorized].png" alt="Logo do Twitter em azul"></a>
+                <a href="#"><img src="imagens_canoodles/facebook [Vectorized].png" alt="Logo do Facebook em azul"></a>
+                <a href="#"><img src="imagens_canoodles/pinterest [Vectorized].png" alt="Logo do Pinterest em azul"></a>
+            </div>
+        </div>
+
+        <div class="coluna_direta">
+
+            <div class="info_conta">
+                <p id="minha_conta" class="ContTitle">Minha conta:</p>
+
+                <div class="conta">
+                    <p>Login ou Cadastro</p>
+                    <p>Carrinho</p>
+                    <p>Meus pedidos</p>
+                </div>
+            </div>
+
+            <button class="botao-footer">
+                <p>Comprar</p>
+            </button>
+
+        </div>
+
+    </footer>
+    </main>
+</body>
+
+</html>
