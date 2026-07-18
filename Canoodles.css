@@ -1,0 +1,807 @@
+:root {
+    --cor-texto: #182567;
+    --cor-fundo: #E4F0FF;
+    --fundo-footer: #1B4965;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+h2 {
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    width: 315px;
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 160px;
+    padding-left: 200px;
+    padding-top: 200px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.ul-nav,
+.li-nav {
+    display: inline;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: var(--cor-texto);
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-size: 25px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 100;
+    background-color: rgba(228, 240, 255, 0.8);
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.icones-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.li-nav {
+    padding: 0px 70px;
+    cursor: pointer;
+}
+
+.li-nav:hover {
+    color: #7FA9C3
+}
+
+#title {
+    margin: 0px;
+    color: var(--cor-texto);
+    font-size: 40px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.hero,
+.sobre,
+.diferencial {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.hero img {
+    width: 30px;
+    height: 30px;
+}
+
+.inicio {
+    background-image: url("imagens_canoodles/Fundo_hero.png");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+}
+
+.form-hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -110px;
+    top: -24%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 200px;
+    background-image: url("imagens_canoodles/Canudo_branco_hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.form-hero {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.botao-hero {
+    position: absolute;
+    right: 670px;
+    top: 62%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7FA9C3;
+    border: none;
+    cursor: pointer;
+}
+
+.hero p {
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-texto);
+    font-size: 40px;
+    padding-left: 270px;
+    margin: 0px 0px 25px 0px;
+}
+
+.form-hero input {
+    color: #000000;
+    background-color: #F5F5F5;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 420px;
+    border: none;
+}
+
+.sobre {
+    height: 700px;
+}
+
+.seta {
+    margin-top: 140px;
+    width: 30px;
+    height: 60px;
+}
+
+.card-canudo {
+    text-align: center;
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 5px solid #7FA9C3;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 30px 0px 30px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.card-canudo img {
+    width: 10px;
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.sobre h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.card-canudo img {
+    width: 100%;
+    height: 220px;
+    border-radius: 30px;
+    display: block;
+}
+
+.grid-diferencial {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-diferencial {
+    grid-template-rows: minmax(0, 270px) minmax(0, 290px);
+}
+
+.box {
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.card_mat {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    background-color: rgba(136, 187, 217, 0.2);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_mat p {
+    padding: 0px 30px;
+    letter-spacing: 0.7px;
+    font-size: 32px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card_pers {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(95, 168, 211, 0.2);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_pers p {
+    padding: 0px 20px;
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+.card_facil {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(102, 133, 152, 0.2);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_facil p {
+    padding: 0px 20px;
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+#icone_mat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding-left: 70px;
+    bottom: 15px;
+}
+
+#icone_pers {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    padding-left: 20px;
+    top: -35px;
+}
+
+#icone_facil {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    padding-left: 20px;
+    top: -35px;
+}
+
+.diferencial h2 {
+    font-size: 60px;
+    padding: 30px;
+    padding-left: 50px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.diferencial h3 {
+    font-size: 40px;
+    position: relative;
+}
+
+.diferencial p {
+    color: #000000;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Mat {
+    color: #1B4965;
+    padding-left: 30px;
+}
+
+#Pers {
+    color: #4B87AA;
+    padding-left: 30px;
+    line-height: 0;
+}
+
+#Facil {
+    color: #5D7F93;
+    padding-left: 30px;
+    line-height: 0;
+}
+
+.depoimento_texto {
+    position: relative;
+    color: #000000;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-image: url("imagens_canoodles/fundo_depoimento.png");
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1212px;
+    aspect-ratio: 1212 / 798;
+    margin: 0 auto;    
+}
+
+.depoimento h2 {
+    font-size: 50px;
+    margin-left: 480px;
+}
+
+#texto_joao {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    width: 200px;
+    top: 140px;
+    left: 240px;
+    font-size: 25px;
+}
+
+#nome_joao {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    width: 200px;
+    top: 370px;
+    left: -30px;
+    font-size: 25px;
+}
+
+#texto_julia {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 30px;
+    width: 18em;
+    top: 500px;
+    left: 50px;
+}
+
+#nome_julia {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 30px;
+    width: 170px;
+    top: 705px;
+    left: 410px;
+}
+
+#texto_clara {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 30px;
+    width: 300px;
+    top: 270px;
+    left: 760px; 
+}
+
+#nome_clara {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 30px;
+    width: 200px;
+    top: 690px;
+    left: 760px;
+}
+
+.compra {
+    color: #000000;
+    background-color: #C5DEFF;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    height: 1400px;
+    padding-top: 50px;
+}
+
+.grid-compra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.item {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.nome-produto {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.preço {
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.classificação {
+    color: #000000;
+    opacity: 50%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1;
+    margin: 2px;
+    padding-left: 20px;
+}
+
+.estrelas {
+    color: #F5B942;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-left: 20px;
+}
+
+.botãomais {
+    position: absolute;
+    border: none;
+    background: transparent;
+    left: 300px;
+    cursor: pointer;
+    display: flex;
+}
+
+.botãomais img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.avaliacao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 110px;
+    margin-top: 4px;
+}
+
+.pesquisa-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.form-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #F8FCFF;
+    border-radius: 30px;
+    padding: 12px 20px;
+    flex: 1;
+}
+
+.form-pesquisa input {
+    color: #000000;
+    background-color: #F5F5F5;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.form-pesquisa button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-pesquisa button img {
+    width: 30px;
+    height: 30px;
+}
+
+.botãofiltro {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #F8FCFF;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botãofiltro img {
+    width: 30px;
+    height: 10px;
+    padding-left: 10px;
+}
+
+.números {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 70px 0;
+}
+
+.números img {
+    cursor: pointer;
+}
+
+.números ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.números li {
+    color: #000000;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 30px;
+    border: 3px solid #5FA8D3;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.números li.ativo {
+    background-color: #5FA8D3;
+    color: white;
+}
+
+footer {
+    display: flex;
+    color: #FFFFFF;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--fundo-footer);
+    gap: 60px;
+    padding: 40px 60px;
+    justify-content: space-between;
+    height: 550px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 60px;
+    margin: 0px;
+
+}
+
+.ContTitle {
+    color: #FFFFFF;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    width: 250px;
+    margin: 0px;
+}
+
+.coluna_esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coluna_direita {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info_conta {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#minha_conta {
+    width: 330px;
+    margin-top: 100px;
+}
+
+#siga_nos {
+    margin-top: 30px;
+}
+
+.conta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.conta p {
+    font-size: 35px;
+    margin: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.contato {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.forms-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato input {
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    width: 500px;
+    max-width: 100%;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.form_canudo {
+    position: relative;
+    z-index: 1;
+}
+
+.form_canudo::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 0%;
+    width: 560px;
+    height: 200px;
+    background-image: url("imagens_canoodles/Canudo_branco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.form_numero {
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    top: 55px;
+}
+
+.form_numero input {
+    width: 200px;
+    margin-left: 40px;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.redes_sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    margin-top: 50px;
+}
+
+.redes_sociais img {
+    width: 40px;
+    height: 40px;
+}
+
+.botao-footer {
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #C5DEFF;
+    border-radius: 80px;
+    font-size: 40px;
+    padding: 0px 60px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.botao-footer:hover {
+    background-color: #93AFD3;
+    box-shadow: 0 0.5em 0.5em -0.4em #0a1b26;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
