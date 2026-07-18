@@ -179,6 +179,7 @@ nav img {
     margin-top: 140px;
     width: 30px;
     height: 60px;
+    cursor: pointer;
 }
 
 .card-canudo {
