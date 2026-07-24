@@ -19,16 +19,16 @@ h2 {
 }
 
 h1 {
-    width: 315px;
+    width: 20rem;
     color: var(--cor-texto);
     font-family: "Baloo Bhai 2", sans-serif;
     font-optical-sizing: auto;
     font-weight: 750;
     font-style: normal;
-    font-size: 160px;
-    padding-left: 200px;
-    padding-top: 200px;
-    margin: 0px;
+    font-size: 10rem;
+    padding-left: 12.5rem;
+    padding-top: 12.5rem;
+    margin: 0rem;
     line-height: 1;
 }
 
@@ -48,8 +48,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 25px;
-    font-size: 25px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.75rem;
     position: fixed; 
     top: 0;
     left: 0;
@@ -59,19 +59,26 @@ nav {
 }
 
 nav img {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
 }
 
 .icones-nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
+}
+
+.hamburguer {
+    display: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
 }
 
 .li-nav {
-    padding: 0px 70px;
+    padding: 0rem 2.5rem;
     cursor: pointer;
 }
 
@@ -80,9 +87,9 @@ nav img {
 }
 
 #title {
-    margin: 0px;
+    margin: 0rem;
     color: var(--cor-texto);
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "Baloo Bhai 2", sans-serif;
     font-optical-sizing: auto;
     font-weight: 750;
@@ -101,8 +108,8 @@ nav img {
 }
 
 .hero img {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .inicio {
@@ -110,18 +117,18 @@ nav img {
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
-    min-height: 750px;
+    min-height: 47rem;
 }
 
 .form-hero::before {
     content: "";
     position: absolute;
     z-index: -1;
-    right: -110px;
+    right: -7rem;
     top: -24%;
     transform: translateY(-50%);
-    width: 600px;
-    height: 200px;
+    width: 37.5rem;
+    height: 12.5rem;
     background-image: url("imagens_canoodles/Canudo_branco_hero.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -136,11 +143,11 @@ nav img {
 
 .botao-hero {
     position: absolute;
-    right: 670px;
+    right: 42rem;
     top: 62%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 3.1rem;
+    height: 3.1rem;
     border-radius: 50%;
     background-color: #7FA9C3;
     border: none;
@@ -152,9 +159,9 @@ nav img {
     font-weight: 400;
     font-style: normal;
     color: var(--cor-texto);
-    font-size: 40px;
-    padding-left: 270px;
-    margin: 0px 0px 25px 0px;
+    font-size: 2.5rem;
+    padding-left: 18rem;
+    margin: 0rem 0rem 1.5rem 0rem;
 }
 
 .form-hero input {
@@ -163,22 +170,22 @@ nav img {
     font-family: "Snippet", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    border-radius: 40px;
+    font-size: 3.1rem;
+    border-radius: 2.5rem;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 420px;
+    margin-top: 1.25rem;
+    margin-left: 26.25rem;
     border: none;
 }
 
 .sobre {
-    height: 700px;
+    height: 43.75rem;
 }
 
 .seta {
-    margin-top: 140px;
-    width: 30px;
-    height: 60px;
+    margin-top: 8.75rem;
+    width: 2rem;
+    height: 4rem;
     cursor: pointer;
 }
 
@@ -189,33 +196,29 @@ nav img {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    border: 5px solid #7FA9C3;
-    border-radius: 30px;
+    border: 0.3rem solid #7FA9C3;
+    border-radius: 2rem;
     display: inline-block;
-    padding: 10px 30px 0px 30px;
-    font-size: 30px;
+    padding: 0.6rem 2rem 0rem 2rem;
+    font-size: 2rem;
     line-height: 1;
-}
-
-.card-canudo img {
-    width: 10px;
 }
 
 .cards {
     justify-content: center;
     display: flex;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .sobre h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .card-canudo img {
     width: 100%;
-    height: 220px;
-    border-radius: 30px;
+    height: 13.75rem;
+    border-radius: 2rem;
     display: block;
 }
 
@@ -223,10 +226,10 @@ nav img {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 25px;
-    max-width: 1500px;
+    gap: 1.5rem;
+    max-width: 93.75rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .grid-diferencial {
@@ -234,21 +237,21 @@ nav img {
 }
 
 .box {
-    border-radius: 20px;
-    padding: 10px 30px;
+    border-radius: 1.25rem;
+    padding: 0.6rem 2rem;
 }
 
 .card_mat {
     grid-row: 1 / 3;
     grid-column: 1;
     background-color: rgba(136, 187, 217, 0.2);
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .card_mat p {
-    padding: 0px 30px;
-    letter-spacing: 0.7px;
-    font-size: 32px;
+    padding: 0rem 2rem;
+    letter-spacing: 0.04rem;
+    font-size: 2rem;
     line-height: 1.6;
     text-align: justify;
 }
@@ -257,14 +260,14 @@ nav img {
     grid-column: 2;
     grid-row: 1;
     background-color: rgba(95, 168, 211, 0.2);
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .card_pers p {
-    padding: 0px 20px;
-    font-size: 28px;
+    padding: 0rem 1.25rem;
+    font-size: 1.75rem;
     line-height: 1.6;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.02px;
     text-align: justify;
 }
 
@@ -272,54 +275,54 @@ nav img {
     grid-column: 2;
     grid-row: 2;
     background-color: rgba(102, 133, 152, 0.2);
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .card_facil p {
-    padding: 0px 20px;
-    font-size: 28px;
+    padding: 0rem 1.25rem;
+    font-size: 1.75rem;
     line-height: 1.6;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.02px;
     text-align: justify;
 }
 
 #icone_mat {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     object-fit: contain;
-    padding-left: 70px;
-    bottom: 15px;
+    padding-left: 4.4rem;
+    bottom: 1rem;
 }
 
 #icone_pers {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     object-fit: contain;
-    padding-left: 20px;
-    top: -35px;
+    padding-left: 1.25rem;
+    top: -2.2rem;
 }
 
 #icone_facil {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     object-fit: contain;
-    padding-left: 20px;
-    top: -35px;
+    padding-left: 1.25rem;
+    top: -2.2rem;
 }
 
 .diferencial h2 {
-    font-size: 60px;
-    padding: 30px;
-    padding-left: 50px;
-    margin: 0px;
+    font-size: 3.75rem;
+    padding: 1.8rem;
+    padding-left: 3.1rem;
+    margin: 0rem;
     line-height: 1;
 }
 
 .diferencial h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     position: relative;
 }
 
@@ -332,18 +335,18 @@ nav img {
 
 #Mat {
     color: #1B4965;
-    padding-left: 30px;
+    padding-left: 1.8rem;
 }
 
 #Pers {
     color: #4B87AA;
-    padding-left: 30px;
+    padding-left: 1.8rem;
     line-height: 0;
 }
 
 #Facil {
     color: #5D7F93;
-    padding-left: 30px;
+    padding-left: 1.8rem;
     line-height: 0;
 }
 
@@ -353,20 +356,24 @@ nav img {
     font-family: "Snippet", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     background-image: url("imagens_canoodles/fundo_depoimento.png");
     background-size: 100%;
     background-position: right center;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 1212px;
+    max-width: 75.75rem;
     aspect-ratio: 1212 / 798;
     margin: 0 auto;    
 }
 
+.depoimento_mobile {
+    display: none;
+}
+
 .depoimento h2 {
-    font-size: 50px;
-    margin-left: 480px;
+    font-size: 3.1rem;
+    margin-left: 30rem;
 }
 
 #texto_joao {
@@ -374,10 +381,10 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    width: 200px;
-    top: 140px;
-    left: 240px;
-    font-size: 25px;
+    width: 12.5rem;
+    top: 8.75rem;
+    left: 15rem;
+    font-size: 1.5rem;
 }
 
 #nome_joao {
@@ -385,10 +392,11 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    width: 200px;
-    top: 370px;
-    left: -30px;
-    font-size: 25px;
+    width: 12.5rem;
+    top: 23.1rem;
+    left: -1.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #texto_julia {
@@ -396,10 +404,10 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    font-size: 30px;
+    font-size: 1.8rem;
     width: 18em;
-    top: 500px;
-    left: 50px;
+    top: 31.25rem;
+    left: 3.1rem;
 }
 
 #nome_julia {
@@ -407,10 +415,11 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    font-size: 30px;
-    width: 170px;
-    top: 705px;
-    left: 410px;
+    font-size: 1.8rem;
+    width: 10.6rem;
+    top: 44rem;
+    left: 25.6rem;
+    font-weight: bold;
 }
 
 #texto_clara {
@@ -418,10 +427,10 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    font-size: 30px;
-    width: 300px;
-    top: 270px;
-    left: 760px; 
+    font-size: 1.875rem;
+    width: 19rem;
+    top: 18rem;
+    left: 47rem; 
 }
 
 #nome_clara {
@@ -429,10 +438,11 @@ nav img {
     margin: 0;
     text-align: center;
     line-height: 1.3;
-    font-size: 30px;
-    width: 200px;
-    top: 690px;
-    left: 760px;
+    font-size: 1.8rem;
+    width: 12.5rem;
+    top: 43.1rem;
+    left: 47.5rem;
+    font-weight: bold;
 }
 
 .compra {
@@ -442,46 +452,47 @@ nav img {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    height: 1400px;
-    padding-top: 50px;
+    min-height: 87.5rem;
+    padding-top: 3.1rem;
+    padding-bottom: 1rem;
 }
 
 .grid-compra {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 3.1rem;
     max-width: 90%;
-    margin: 40px auto;
+    margin: 2.5rem auto;
 }
 
 .item {
     background-color: #FFFFFF;
     border: none;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 1.25rem;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
 }
 
 .item img {
     width: 100%;
-    height: 250px;
+    height: 15.6rem;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 10px;
+    border-radius: 0.75rem;
+    margin-bottom: 0.6rem;
 }
 
 .nome-produto {
     font-weight: 700;
-    font-size: 25px;
-    margin: 15px 0;
-    padding-left: 20px;
+    font-size: 1.5rem;
+    margin: 0.9rem 0;
+    padding-left: 1.25rem;
 }
 
 .preço {
     font-weight: 700;
-    margin-top: 8px;
-    font-size: 25px;
-    padding-left: 20px;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1.25rem;
 }
 
 .classificação {
@@ -491,31 +502,31 @@ nav img {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.35rem;
     line-height: 1;
-    margin: 2px;
-    padding-left: 20px;
+    margin: 0.125rem;
+    padding-left: 1.25rem;
 }
 
 .estrelas {
     color: #F5B942;
-    font-size: 40px;
-    letter-spacing: 3px;
-    padding-left: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    padding-left: 1.25rem;
 }
 
 .botãomais {
     position: absolute;
     border: none;
     background: transparent;
-    left: 300px;
+    left: 18.75rem;
     cursor: pointer;
     display: flex;
 }
 
 .botãomais img {
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     display: block;
 }
 
@@ -524,8 +535,8 @@ nav img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 110px;
-    margin-top: 4px;
+    gap: 6.9rem;
+    margin-top: 0.25rem;
 }
 
 .pesquisa-compra {
@@ -533,16 +544,16 @@ nav img {
     justify-content: space-between;
     align-items: center;
     max-width: 90%;
-    margin: 30px auto;
-    gap: 20px;
+    margin: 1.8rem auto;
+    gap: 1.25rem;
 }
 
 .form-pesquisa {
     display: flex;
     align-items: center;
     background-color: #F8FCFF;
-    border-radius: 30px;
-    padding: 12px 20px;
+    border-radius: 1.8rem;
+    padding: 0.75rem 1.25rem;
     flex: 1;
 }
 
@@ -555,21 +566,21 @@ nav img {
     border: none;
     background: transparent;
     outline: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .form-pesquisa button {
     border: none;
     background: transparent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .form-pesquisa button img {
-    width: 30px;
-    height: 30px;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .botãofiltro {
@@ -579,26 +590,26 @@ nav img {
     font-weight: 400;
     font-style: normal;
     border: none;
-    border-radius: 30px;
-    padding: 12px 24px;
-    font-size: 25px;
+    border-radius: 1.9rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     white-space: nowrap;
 }
 
 .botãofiltro img {
-    width: 30px;
-    height: 10px;
-    padding-left: 10px;
+    width: 1.8rem;
+    height: 0.6rem;
+    padding-left: 0.6rem;
 }
 
 .números {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin: 70px 0;
+    gap: 1.8rem;
+    margin: 4.4rem 0;
 }
 
 .números img {
@@ -607,7 +618,7 @@ nav img {
 
 .números ul {
     display: flex;
-    gap: 30px;
+    gap: 1.9rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -619,11 +630,11 @@ nav img {
     font-optical-sizing: auto;
     font-weight: 750;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.8rem;
     border: 3px solid #5FA8D3;
-    border-radius: 10px;
-    width: 60px;
-    height: 60px;
+    border-radius: 0.6rem;
+    width: 3.75rem;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,6 +646,15 @@ nav img {
     color: white;
 }
 
+.botãomais {
+    left: 18.75rem;
+}
+
+.botãomais img {
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
 footer {
     display: flex;
     color: #FFFFFF;
@@ -642,16 +662,16 @@ footer {
     font-weight: 400;
     font-style: normal;
     background-color: var(--fundo-footer);
-    gap: 60px;
-    padding: 40px 60px;
+    gap: 3.75rem;
+    padding: 2.5rem 3.75rem;
     justify-content: space-between;
-    height: 550px;
+    height: 34.4rem;
 }
 
 footer h2 {
     color: #FFFFFF;
-    font-size: 60px;
-    margin: 0px;
+    font-size: 3.75rem;
+    margin: 0rem;
 
 }
 
@@ -661,56 +681,56 @@ footer h2 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
-    width: 250px;
-    margin: 0px;
+    font-size: 2.5rem;
+    width: 15.6rem;
+    margin: 0rem;
 }
 
 .coluna_esquerda {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .coluna_direita {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .info_conta {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 #minha_conta {
-    width: 330px;
-    margin-top: 100px;
+    width: 20.6rem;
+    margin-top: 6.25rem;
 }
 
 #siga_nos {
-    margin-top: 30px;
+    margin-top: 1.8rems;
 }
 
 .conta {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 100px;
+    gap: 1rem;
+    margin-top: 6.25rem;
 }
 
 .conta p {
-    font-size: 35px;
-    margin: 10px;
-    margin-left: 0px;
+    font-size: 2.1rem;
+    margin: 0.6rem;
+    margin-left: 0rem;
     cursor: pointer;
 }
 
 .contato {
     display: flex;
     align-items: flex-start; 
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .forms-contato {
@@ -722,15 +742,15 @@ footer h2 {
     font-family: "Snippet", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 1.8rem;
     width: 500px;
     max-width: 100%;
-    padding: 12px 25px;
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.1rem;
     background-color: #F5F5F5;
-    margin-bottom: 15px;
-    margin-left: 40px;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
 }
 
 .form_canudo {
@@ -741,10 +761,10 @@ footer h2 {
 .form_canudo::before {
     content: "";
     position: absolute;
-    left: -35px;
+    left: -2.1rem;
     top: 0%;
-    width: 560px;
-    height: 200px;
+    width: 35rem;
+    height: 12.5rem;
     background-image: url("imagens_canoodles/Canudo_branco.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -755,35 +775,35 @@ footer h2 {
 .form_numero {
     position: relative;
     z-index: 1;
-    margin-left: 20px;
-    top: 55px;
+    margin-left: 1.25rem;
+    top: 3.4rem;
 }
 
 .form_numero input {
-    width: 200px;
-    margin-left: 40px;
+    width: 12.5rem;
+    margin-left: 2.5rem;
 }
 
 .redes_sociais {
     display: flex;
-    gap: 15px;
-    margin-top: 50px;
+    gap: 1rem;
+    margin-top: 3.1rem;
 }
 
 .redes_sociais a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     border-radius: 50%;
     background-color: #EDEDED;
-    margin-top: 50px;
+    margin-top: 3.1rem;
 }
 
 .redes_sociais img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .botao-footer {
@@ -792,17 +812,468 @@ footer h2 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
     background-color: #C5DEFF;
-    border-radius: 80px;
-    font-size: 40px;
-    padding: 0px 60px;
-    margin-top: 70px;
-    margin-left: 100px;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-left: 6.25rem;
+    width: 20rem;
+    height: 8rem;
+}
+
+.botao-footer p {
+    margin: 0;
 }
 
 .botao-footer:hover {
     background-color: #93AFD3;
-    box-shadow: 0 0.5em 0.5em -0.4em #0a1b26;
-    transform: translateY(-0.25em);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem #0a1b26;
+    transform: translateY(-0.25rem);
     cursor: pointer;
+}
+
+@media screen and (width < 768px) { 
+    h1 {
+        font-size: 5rem;
+        padding-left: 1rem;
+    }
+
+    .ul-nav {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    .icones-nav {
+        display: none;
+    }
+
+    .ul-nav.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(228, 240, 255, 0.95);
+        padding: 1rem 0;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .form-hero input {
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .form-hero::before {
+        width: 19rem;
+        right: -2rem;
+        top: 95%;
+    }
+
+    .botao-hero {
+        right: 19.75rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 80%;
+    }
+
+    .hero img {
+        width: 1.1rem;
+        height: 1.1rem
+    };
+
+    .sobre h2 {
+        font-size: 2rem;
+        width: 22rem;
+        padding-left: 2.4rem;
+    }
+
+    .quebra {
+        display: none;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card-canudo {
+        display: none;
+        margin-right: 0;
+    }
+
+    .card-canudo.ativo {
+        display: inline-block;
+    }
+
+    .seta {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .diferencial h2 {
+        font-size: 3rem;
+    }
+
+    .grid-diferencial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card_mat p {
+        padding: 0rem 0rem;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .diferencial h3 {
+        font-size: 2rem;
+    }
+
+    #Mat {
+        padding-left: 0.5rem;
+    }
+
+    #icone_mat {
+        width: 5rem;
+        height: 5rem;
+        padding-left: 3.5rem;
+        bottom: 0.7rem;
+    }
+
+    #icone_pers {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    #Pers {
+        padding-left: 0.5rem;
+    }
+
+    #Facil {
+        padding-left: 0.5rem;
+    }
+
+    #icone_facil {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    .depoimento_texto {
+        display: none;
+    }
+
+    .depoimento h2 {
+        font-size: 2rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .depoimento_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+        position: relative;
+        color: #000000;
+        font-family: "Snippet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+        background-image: url("imagens_canoodles/iPhone\ 17\ -\ 1.png");
+        background-size: contain;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 90rem;
+        aspect-ratio: 519 / 1518; 
+        margin: 0 auto;
+    }
+
+    .depoimento_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+    }
+
+    .texto_depoimento {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .nome_depoimento {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #texto_piscina {
+        width: 12.5rem;
+        margin-top: 12rem;
+        margin-right: 2rem;
+    }
+
+    #nome_piscina {
+        margin-top: -20rem;
+        margin-left: 2rem;
+    }
+
+    #texto_formatura {
+        width: 14rem;
+        margin-top: 33rem;
+        margin-right: 2rem;
+    }
+
+    #nome_formatura {
+       margin-top: 2.5rem;
+       margin-right: 6rem;
+    }
+    
+    #texto_canudo {
+        width: 17rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+
+    #nome_canudo {
+        margin-top: 4.3rem;
+        margin-left: 7.3rem;
+    }
+
+    .compra {
+        min-height: 80rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .grid-compra {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2.5rem auto 2.5rem 3%;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    .item img {
+        width: 100%;
+        height: 8rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .avaliacao {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .form-pesquisa input {
+        font-size: 1.25rem;
+        padding-left: 0.6rem;
+    }
+
+    .form-pesquisa button {
+        font-size: 1rem;
+    }
+
+    .form-pesquisa button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .botãofiltro {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .botãofiltro img {
+        width: 1.3rem;
+        height: 0.4rem;
+        padding-left: 0.6rem;
+    }
+
+    .botãomais {
+        top: 3rem;
+        left: auto;
+        right: 0.5rem;
+    }
+
+    .botãomais img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nome-produto {
+        width: 10rem;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        padding-left: 0.25rem;
+    }
+
+    .preço {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        padding-left: 0.25rem;
+    }
+
+    .classificação {
+        font-size: 0.75rem;
+        line-height: 1;
+        margin: 0.125rem;
+        padding-left: 0.25rem;
+    }
+
+    .estrelas {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        padding-left: 0.25rem;
+    }
+
+    .números {
+        gap: 1rem;
+        margin: 4rem 0;
+    }
+
+    .números ul {
+        gap: 1.5rem;
+    }
+
+    .números li {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .números img {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .coluna_esquerda,
+    .coluna_direita {
+        display: contents;
+    }
+
+    h2 {
+        order: 1;
+    }
+
+    .contato {
+        order: 2;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .info_conta {
+        order: 3;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    #minha_conta {
+        margin-top: 0;
+        width: auto;
+    }
+
+    .conta {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .conta p {
+        font-size: 1.75rem
+    }
+
+    .redes_sociais {
+        flex-wrap: wrap;
+        gap: 1rem;
+        order: 4;
+        margin-top: 0;
+    }
+
+    .botao-footer {
+        order: 5;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .contato input {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .form_canudo::before {
+        width: 20.5rem;
+        margin-top: 0rem;
+    }
+
+    .form_canudo {
+        margin-left: 1rem;
+    }
+
+    .form_numero {
+        margin-left: 1rem;
+        top: 0;
+    }
+
+    .form_numero input {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    #siga_nos {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+
+    .redes_sociais a {
+        margin-top: 0;
+    }
+
 }
