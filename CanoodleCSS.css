@@ -1,0 +1,2742 @@
+:root {
+    --cor-texto: #182567;
+    --cor-fundo: #E4F0FF;
+    --fundo-footer: #1B4965;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero,
+.sobre,
+.diferencial,
+.depoimento,
+.compra {
+    scroll-margin-top: 0rem;
+}
+
+h2 {
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    width: 20rem;
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 10rem;
+    padding-left: 12.5rem;
+    padding-top: 12.5rem;
+    margin: 0rem;
+    line-height: 1;
+}
+
+.ul-nav,
+.li-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.li-nav a,
+#title {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.ul-nav a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.icones-nav a {
+    display: flex;
+}
+
+nav {
+    color: var(--cor-texto);
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.75rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 100;
+    background-color: rgba(228, 240, 255, 0.5);
+}
+
+nav img {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+#home,
+#carro {
+    display: none;
+}
+
+#carro {
+    margin-left: 2.5rem;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.icones-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.hamburguer {
+    display: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+.li-nav {
+    padding: 0rem 2.5rem;
+    cursor: pointer;
+}
+
+.li-nav:hover {
+    color: #7FA9C3
+}
+
+#title {
+    margin: 0rem;
+    color: var(--cor-texto);
+    font-size: 2.5rem;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.hero,
+.sobre,
+.diferencial {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.hero img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.inicio {
+    background-image: url("imagens_canoodles/Fundo_hero.png");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-height: 47rem;
+}
+
+.form-hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -7rem;
+    top: -24%;
+    transform: translateY(-50%);
+    width: 37.5rem;
+    height: 12.5rem;
+    background-image: url("imagens_canoodles/Canudo_branco_hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.form-hero {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.botao-hero {
+    position: absolute;
+    right: 42rem;
+    top: 62%;
+    transform: translateY(-50%);
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    background-color: #7FA9C3;
+    border: none;
+    cursor: pointer;
+}
+
+.hero p {
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-texto);
+    font-size: 2.5rem;
+    padding-left: 18rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.form-hero input {
+    color: #000000;
+    background-color: #F5F5F5;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.1rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-left: 26.25rem;
+    border: none;
+}
+
+.sobre {
+    height: 41rem;
+    margin-top: 6rem;
+}
+
+.seta {
+    margin-top: 0rem;
+    width: 2rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.card-canudo {
+    text-align: center;
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    flex: 0 0 16rem;
+    width: 16rem;
+    border: 0.3rem solid #7FA9C3;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 0.6rem 2rem 0rem 2rem;
+    font-size: 2rem;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.card-canudo img {
+    width: 100%;
+    height: 13.75rem;
+    border-radius: 2rem;
+    display: block;
+}
+
+.cards-viewport {
+    overflow: hidden;
+    width: calc(3 * 16rem + 2 * 2rem);
+}
+
+.cards-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.grid-diferencial {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    grid-template-rows: minmax(0, 270px) minmax(0, 290px);
+}
+
+.box {
+    border-radius: 1.25rem;
+    padding: 0.6rem 2rem;
+}
+
+.card_mat {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    background-color: rgba(136, 187, 217, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.card_mat p {
+    padding: 0rem 2rem;
+    letter-spacing: 0.04rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card_pers {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(95, 168, 211, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.card_pers p {
+    padding: 0rem 1.25rem;
+    font-size: 1.75rem;
+    line-height: 1.6;
+    letter-spacing: 0.02px;
+    text-align: justify;
+}
+
+.card_facil {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(102, 133, 152, 0.2);
+    box-shadow: inset 0rem 0rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.card_facil p {
+    padding: 0rem 1.25rem;
+    font-size: 1.75rem;
+    line-height: 1.6;
+    letter-spacing: 0.02px;
+    text-align: justify;
+}
+
+#icone_mat {
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: contain;
+    padding-left: 4.4rem;
+    bottom: 1rem;
+}
+
+#icone_pers {
+    position: absolute;
+    width: 4.4rem;
+    height: 4.4rem;
+    object-fit: contain;
+    padding-left: 1.25rem;
+    top: -2.2rem;
+}
+
+#icone_facil {
+    position: absolute;
+    width: 4.4rem;
+    height: 4.4rem;
+    object-fit: contain;
+    padding-left: 1.25rem;
+    top: -2.2rem;
+}
+
+.diferencial h2 {
+    font-size: 3.75rem;
+    padding: 1.8rem;
+    padding-left: 3.1rem;
+    margin: 0rem;
+    line-height: 1;
+}
+
+.diferencial h3 {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.diferencial p {
+    color: #000000;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Mat {
+    color: #1B4965;
+    padding-left: 1.8rem;
+}
+
+#Pers {
+    color: #4B87AA;
+    padding-left: 1.8rem;
+    line-height: 0;
+}
+
+#Facil {
+    color: #5D7F93;
+    padding-left: 1.8rem;
+    line-height: 0;
+}
+
+.depoimento_texto {
+    position: relative;
+    color: #000000;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    background-image: url("imagens_canoodles/fundo_depoimento.png");
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 75.75rem;
+    aspect-ratio: 1212 / 798;
+    margin: 0 auto;
+}
+
+.depoimento_mobile {
+    display: none;
+}
+
+.depoimento h2 {
+    font-size: 3.1rem;
+    margin-left: 30rem;
+}
+
+#texto_joao {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    width: 12.5rem;
+    top: 8.75rem;
+    left: 15rem;
+    font-size: 1.5rem;
+}
+
+#nome_joao {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    width: 12.5rem;
+    top: 23.1rem;
+    left: -1.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#texto_julia {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    width: 18em;
+    top: 31.25rem;
+    left: 3.1rem;
+}
+
+#nome_julia {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    width: 10.6rem;
+    top: 44rem;
+    left: 25.6rem;
+    font-weight: bold;
+}
+
+#texto_clara {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.875rem;
+    width: 19rem;
+    top: 18rem;
+    left: 47rem;
+}
+
+#nome_clara {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    width: 12.5rem;
+    top: 43.1rem;
+    left: 47.5rem;
+    font-weight: bold;
+}
+
+.compra {
+    color: #000000;
+    background-color: #C5DEFF;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    min-height: 87.5rem;
+    padding-top: 3.1rem;
+    padding-bottom: 1rem;
+}
+
+.grid-compra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.1rem;
+    max-width: 85%;
+    margin: 2.5rem auto;
+}
+
+.item {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+}
+
+.item img {
+    width: 100%;
+    height: 15.6rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.nome-produto {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.9rem 0;
+    padding-left: 1.25rem;
+}
+
+.preço {
+    font-weight: 700;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 1.25rem;
+}
+
+.classificação {
+    color: #000000;
+    opacity: 50%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.35rem;
+    line-height: 1;
+    margin: 0.125rem;
+    padding-left: 1.25rem;
+}
+
+.estrelas {
+    color: #F5B942;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    padding-left: 1.25rem;
+}
+
+.botãomais {
+    position: absolute;
+    border: none;
+    background: transparent;
+    left: 17rem;
+    top: 1rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.botãomais img {
+    width: 4.4rem;
+    height: 4.4rem;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 50%;
+}
+
+.botãomais:hover img {
+    opacity: 0.85;
+}
+
+.avaliacao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.9rem;
+    margin-top: 0.25rem;
+}
+
+.pesquisa-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 1.8rem auto;
+    gap: 1.25rem;
+}
+
+.form-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #F8FCFF;
+    border-radius: 1.8rem;
+    padding: 0.75rem 1.25rem;
+    flex: 1;
+}
+
+.form-pesquisa input {
+    color: #000000;
+    background-color: #F5F5F5;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.25rem;
+    width: 100%;
+    padding-left: 1.25rem;
+}
+
+.form-pesquisa button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.form-pesquisa button img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.botãofiltro {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #F8FCFF;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    border-radius: 1.9rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botãofiltro img {
+    width: 1.8rem;
+    height: 0.6rem;
+    padding-left: 0.6rem;
+}
+
+.filtro-wrapper {
+    position: relative;
+}
+
+.filtro-dropdown {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 0;
+    background-color: #F8FCFF;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    z-index: 50;
+    min-width: 17rem;
+}
+
+.filtro-linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.filtro-linha input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    accent-color: #5FA8D3;
+}
+
+.sem-resultados {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: "Snippet", sans-serif;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 3rem 0;
+}
+
+.números {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 4.4rem 0;
+}
+
+.números img {
+    cursor: pointer;
+}
+
+.números ul {
+    display: flex;
+    gap: 1.9rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.números li {
+    color: #000000;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 1.8rem;
+    border: 3px solid #5FA8D3;
+    border-radius: 0.6rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.números li.ativo {
+    background-color: #5FA8D3;
+    color: white;
+}
+
+.carrinho-botao {
+    position: relative;
+    display: flex;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carrinho-badge {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: #E63946;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 200;
+}
+
+.carrinho-painel {
+    background-color: var(--cor-fundo);
+    width: 26rem;
+    max-width: 90%;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-family: "Snippet", sans-serif;
+    color: var(--cor-texto);
+}
+
+.carrinho-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.carrinho-fechar {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--cor-texto);
+    line-height: 1;
+}
+
+.carrinho-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.carrinho-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.carrinho-item img {
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+
+.carrinho-nome {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.carrinho-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+}
+
+.carrinho-qtd-controle {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0.4rem 0;
+}
+
+.carrinho-qtd-controle span {
+    font-weight: 700;
+    min-width: 1rem;
+    text-align: center;
+}
+
+.carrinho-qtd-botao {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 2px solid #5FA8D3;
+    background-color: transparent;
+    color: #5FA8D3;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.carrinho-qtd-botao:hover {
+    background-color: #5FA8D3;
+    color: #FFFFFF;
+}
+
+.carrinho-limpar {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 1.9rem;
+    background-color: #E63946;
+    color: #FFFFFF;
+    font-family: "Snippet", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carrinho-limpar:hover {
+    opacity: 0.85;
+}
+
+.carrinho-comprar {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 1.9rem;
+    background-color: #C5DEFF;
+    color: var(--cor-texto);
+    font-family: "Snippet", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carrinho-comprar:hover {
+    opacity: 0.85;
+}
+
+.carrinho-sucesso {
+    color: #5aa06a;
+    font-family: "Snippet", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#vazio {
+    font-size: 1.3rem;
+}
+
+footer {
+    display: flex;
+    color: #FFFFFF;
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--fundo-footer);
+    gap: 3.75rem;
+    padding: 2.5rem 3.75rem;
+    justify-content: space-between;
+    min-height: 34.4rem;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 3.75rem;
+    margin: 0rem;
+
+}
+
+.ContTitle {
+    color: #FFFFFF;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    width: 15.6rem;
+    margin: 0rem;
+}
+
+.coluna_esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.coluna_direita {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.info_conta {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+#minha_conta {
+    width: 20.6rem;
+    margin-top: 6.25rem;
+}
+
+#siga_nos {
+    margin-top: 1.8rem;
+}
+
+.conta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 6.25rem;
+}
+
+.conta p {
+    font-size: 2.1rem;
+    margin: 0.6rem;
+    margin-left: 0rem;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+}
+
+.conta p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0;
+    height: 3px;
+    background-color: #FFFFFF;
+    transition: width 0.25s ease;
+}
+
+.conta p:hover::after {
+    width: 100%;
+}
+
+#login:hover::after {
+    width: 65%;
+}
+
+.contato {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.forms-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato input {
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    width: 500px;
+    max-width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 3.1rem;
+    background-color: #F5F5F5;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+
+.form_canudo {
+    position: relative;
+    z-index: 1;
+}
+
+.form_canudo::before {
+    content: "";
+    position: absolute;
+    left: -2.1rem;
+    top: 0%;
+    width: 35rem;
+    height: 11rem;
+    background-image: url("imagens_canoodles/Canudo_branco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.form_numero {
+    position: relative;
+    z-index: 1;
+    margin-left: 1.25rem;
+    top: 2.87rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form_numero input {
+    width: 12.5rem;
+    margin-left: 2.5rem;
+    height: 1.9rem;
+}
+
+.contato textarea {
+    font-family: "Snippet", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 500px;
+    max-width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #F5F5F5;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    height: 8rem;
+    resize: vertical;
+}
+
+.botao-enviar {
+    background-color: #C5DEFF;
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 3.1rem;
+    padding: 0.75rem 1.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botao-enviar:hover {
+    opacity: 0.85;
+}
+
+.botao-enviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contato-feedback {
+    font-family: "Snippet", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 3.6rem;
+    margin-left: 2.5rem;
+}
+
+.contato-sucesso {
+    color: #7CD992;
+}
+
+.contato-erro {
+    color: #E63946;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.1rem;
+}
+
+.redes_sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    margin-top: 3.1rem;
+}
+
+.redes_sociais img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.redes_sociais a:hover {
+    opacity: 0.85;
+}
+
+.botao-footer {
+    color: var(--cor-texto);
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background-color: #C5DEFF;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-left: 6.25rem;
+    width: 20rem;
+    height: 8rem;
+    cursor: pointer;
+}
+
+.botao-footer a {
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.botao-footer:hover {
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 5rem;
+        padding-left: 1rem;
+    }
+
+    .ul-nav {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #home,
+    #carro {
+        display: block;
+    }
+
+    .icones-nav {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 3.5rem;
+    }
+
+    .ul-nav.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(228, 240, 255);
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .form-hero input {
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .form-hero::before {
+        width: 19rem;
+        right: -2rem;
+        top: 95%;
+    }
+
+    .botao-hero {
+        right: 19.75rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 80%;
+    }
+
+    .hero img {
+        width: 1.1rem;
+        height: 1.1rem
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+        width: 22rem;
+        padding-left: 2.4rem;
+    }
+
+    .quebra {
+        display: none;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cards-viewport {
+        width: calc(2 * 16rem + 1 * 2rem);
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .seta {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    #seta-direita {
+        margin-right: 2.15rem;
+    }
+
+    .diferencial h2 {
+        font-size: 3rem;
+    }
+
+    .grid-diferencial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card_mat p {
+        padding: 0rem 0rem;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .diferencial h3 {
+        font-size: 2rem;
+    }
+
+    #Mat {
+        padding-left: 0.5rem;
+    }
+
+    #icone_mat {
+        width: 5rem;
+        height: 5rem;
+        padding-left: 3.5rem;
+        bottom: 0.7rem;
+    }
+
+    #icone_pers {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    #Pers {
+        padding-left: 0.5rem;
+    }
+
+    #Facil {
+        padding-left: 0.5rem;
+    }
+
+    #icone_facil {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    .depoimento_texto {
+        display: none;
+    }
+
+    .depoimento h2 {
+        font-size: 2rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .depoimento_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+        position: relative;
+        color: #000000;
+        font-family: "Snippet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+        background-image: url("imagens_canoodles/iPhone\ 17\ -\ 1.png");
+        background-size: contain;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 90rem;
+        aspect-ratio: 519 / 1518;
+        margin: 0 auto;
+    }
+
+    .depoimento_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+    }
+
+    .texto_depoimento {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .nome_depoimento {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #texto_piscina {
+        width: 12.5rem;
+        margin-top: 12rem;
+        margin-right: 2rem;
+    }
+
+    #nome_piscina {
+        margin-top: -20rem;
+        margin-left: 2rem;
+    }
+
+    #texto_formatura {
+        width: 14rem;
+        margin-top: 33rem;
+        margin-right: 2rem;
+    }
+
+    #nome_formatura {
+        margin-top: 2.5rem;
+        margin-right: 6rem;
+    }
+
+    #texto_canudo {
+        width: 17rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+
+    #nome_canudo {
+        margin-top: 4.3rem;
+        margin-left: 7.3rem;
+    }
+
+    .compra {
+        min-height: 80rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .grid-compra {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2.5rem auto 2.5rem 3%;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    .item img {
+        width: 100%;
+        height: 8rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .avaliacao {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .form-pesquisa input {
+        font-size: 1.25rem;
+        padding-left: 0.6rem;
+    }
+
+    .form-pesquisa button {
+        font-size: 1rem;
+    }
+
+    .form-pesquisa button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .botãofiltro {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .botãofiltro img {
+        width: 1.3rem;
+        height: 0.4rem;
+        padding-left: 0.6rem;
+    }
+
+    .botãomais {
+        top: 3rem;
+        left: auto;
+        right: 0.5rem;
+    }
+
+    .botãomais img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nome-produto {
+        width: 10rem;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        padding-left: 0.25rem;
+    }
+
+    .preço {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        padding-left: 0.25rem;
+    }
+
+    .classificação {
+        font-size: 0.75rem;
+        line-height: 1;
+        margin: 0.125rem;
+        padding-left: 0.25rem;
+    }
+
+    .estrelas {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        padding-left: 0.25rem;
+    }
+
+    .números {
+        gap: 1rem;
+        margin: 4rem 0;
+    }
+
+    .números ul {
+        gap: 1.5rem;
+    }
+
+    .números li {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .números img {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .coluna_esquerda,
+    .coluna_direita {
+        display: contents;
+    }
+
+    footer h2 {
+        order: 1;
+    }
+
+    .ContTitle {
+        width: auto;
+        font-size: 1.75rem;
+    }
+
+    .contato {
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .forms-contato {
+        flex: 1;
+        min-width: 12rem;
+    }
+
+    .info_conta {
+        order: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    #minha_conta {
+        margin-top: 0;
+        width: auto;
+    }
+
+    .conta {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .conta p {
+        font-size: 1.75rem
+    }
+
+    .redes_sociais {
+        flex-wrap: wrap;
+        gap: 1rem;
+        order: 4;
+        margin-top: 0;
+    }
+
+    .botao-footer {
+        order: 5;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .contato input {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .form_canudo::before {
+        width: 21rem;
+        margin-top: 0rem;
+    }
+
+    .form_canudo {
+        margin-left: 1rem;
+        width: 55%;
+    }
+
+    .form_numero {
+        margin-left: 1rem;
+        top: 0;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .form_numero input {
+        width: 40%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        height: 1.25rem;
+    }
+
+    .botao-enviar {
+        font-size: 1.5rem;
+        padding: 0.6rem 1.25rem;
+    }
+
+    .form_mensagem {
+        width: 55%;
+        margin-left: -2rem;
+    }
+
+    .contato-feedback {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    #siga_nos {
+        margin-top: 0;
+    }
+
+    .redes_sociais a {
+        margin-top: 0;
+    }
+
+    #login:hover::after {
+        width: 100%;
+    }
+
+    .carrinho-painel {
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .carrinho-limpar,
+    .carrinho-comprar {
+        width: 65%;
+    }
+
+    .carrinho-fechar {
+        margin-right: 9rem;
+        margin-top: -0.5rem;
+    }
+
+    .carrinho-sucesso {
+        margin-left: -8rem;
+        font-size: 1.3rem;
+    }
+
+    .carrinho-nome {
+        width: 70%;
+    }
+
+
+    h1 {
+        font-size: 8rem;
+        padding-left: 8rem;
+    }
+
+    .ul-nav {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #home,
+    #carro {
+        display: block;
+    }
+
+    .icones-nav {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 3.5rem;
+    }
+
+    .ul-nav.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(228, 240, 255);
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+        padding-left: 13rem;
+    }
+
+    .form-hero input {
+        font-size: 2.15rem;
+        border-radius: 1rem;
+        margin-left: 10rem;
+        margin-top: 5rem;
+    }
+
+    .form-hero::before {
+        width: 25rem;
+        right: -5rem;
+        top: 70%;
+    }
+
+    .botao-hero {
+        right: 29rem;
+        width: 2rem;
+        height: 2rem;
+        top: 83%;
+    }
+
+    .hero img {
+        width: 1.3rem;
+        height: 1.3rem
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+        width: 60%;
+        padding-left: 10rem;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 2rem;
+    }
+
+    .cards-viewport {
+        width: calc(2 * 16rem + 1 * 2rem);
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .seta {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    #seta-direita {
+        margin-right: 2.15rem;
+    }
+
+    .diferencial h2 {
+        font-size: 3rem;
+    }
+
+    .grid-diferencial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card_mat p {
+        padding: 0rem 0rem;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .diferencial h3 {
+        font-size: 2rem;
+    }
+
+    #Mat {
+        padding-left: 0.5rem;
+    }
+
+    #icone_mat {
+        width: 5rem;
+        height: 5rem;
+        padding-left: 3.5rem;
+        bottom: 0.7rem;
+    }
+
+    #icone_pers {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    #Pers {
+        padding-left: 0.5rem;
+    }
+
+    #Facil {
+        padding-left: 0.5rem;
+    }
+
+    #icone_facil {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    .depoimento_texto {
+        display: none;
+    }
+
+    .depoimento h2 {
+        font-size: 2.5rem;
+        width: 20rem;
+        margin-left: 15rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .depoimento_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+        position: relative;
+        color: #000000;
+        font-family: "Snippet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+        background-image: url("imagens_canoodles/fundo_tablet.png");
+        background-size: contain;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 90rem;
+        aspect-ratio: 834 / 1194;
+        margin: 0 auto;
+    }
+
+    .depoimento_item {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 30rem;
+    }
+
+    .texto_depoimento {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .nome_depoimento {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #texto_piscina {
+        width: 12.5rem;
+        margin-top: 8rem;
+        margin-right: -12rem;
+    }
+
+    #nome_piscina {
+        margin-top: -3rem;
+        margin-left: -35rem;
+        font-size: 1.5rem;
+    }
+
+    #texto_formatura {
+        font-size: 1.5rem;
+        width: 22rem;
+        margin-top: 41.5rem;
+        margin-right: 17rem;
+    }
+
+    #nome_formatura {
+        font-size: 1.5rem;
+        margin-top: -10rem;
+        margin-right: -31rem;
+    }
+
+    #texto_canudo {
+        width: 25rem;
+        font-size: 1.4rem;
+        margin-top: 58.75rem;
+        margin-left: 13rem;
+    }
+
+    #nome_canudo {
+        font-size: 1.35rem;
+        width: 10rem;
+        margin-top: 1.75rem;
+        margin-left: 25rem;
+    }
+
+    .compra {
+        min-height: 80rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .grid-compra {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2.5rem auto3 2.5rem 30%;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    .item img {
+        width: 100%;
+        height: 8rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .avaliacao {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .form-pesquisa input {
+        font-size: 1.25rem;
+        padding-left: 0.6rem;
+    }
+
+    .form-pesquisa button {
+        font-size: 1rem;
+    }
+
+    .form-pesquisa button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .botãofiltro {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .botãofiltro img {
+        width: 1.3rem;
+        height: 0.4rem;
+        padding-left: 0.6rem;
+    }
+
+    .botãomais {
+        top: -1rem;
+        left: auto;
+        right: 1rem;
+    }
+
+    .botãomais img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nome-produto {
+        width: 10rem;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        padding-left: 0.25rem;
+    }
+
+    .preço {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        padding-left: 0.25rem;
+    }
+
+    .classificação {
+        font-size: 0.75rem;
+        line-height: 1;
+        margin: 0.125rem;
+        padding-left: 0.25rem;
+    }
+
+    .estrelas {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        padding-left: 0.25rem;
+    }
+
+    .números {
+        gap: 1rem;
+        margin: 4rem 0;
+    }
+
+    .números ul {
+        gap: 1.5rem;
+    }
+
+    .números li {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .números img {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .coluna_esquerda,
+    .coluna_direita {
+        display: contents;
+    }
+
+    footer h2 {
+        order: 1;
+    }
+
+    .ContTitle {
+        width: auto;
+        font-size: 1.75rem;
+    }
+
+    .contato {
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .forms-contato {
+        flex: 1;
+        min-width: 12rem;
+    }
+
+    .info_conta {
+        order: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    #minha_conta {
+        margin-top: 0;
+        width: auto;
+    }
+
+    .conta {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .conta p {
+        font-size: 1.75rem
+    }
+
+    .redes_sociais {
+        flex-wrap: wrap;
+        gap: 1rem;
+        order: 4;
+        margin-top: 0;
+    }
+
+    .botao-footer {
+        order: 5;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+        margin-top: 2rem;
+        margin-left: 17rem;
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .contato input {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .form_canudo::before {
+        width: 21rem;
+        margin-top: 0rem;
+    }
+
+    .form_canudo {
+        margin-left: 1rem;
+        width: 82%;
+    }
+
+    .form_numero {
+        margin-left: 1rem;
+        top: 0;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .form_numero input {
+        width: 40%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        height: 1.25rem;
+    }
+
+    .botao-enviar {
+        font-size: 1.5rem;
+        padding: 0.6rem 1.25rem;
+    }
+
+    .form_mensagem {
+        width: 85%;
+        margin-left: -2rem;
+    }
+
+    .contato-feedback {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    #siga_nos {
+        margin-top: 0;
+    }
+
+    .redes_sociais a {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    #login:hover::after {
+        width: 100%;
+    }
+
+
+    .carrinho-painel {
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .carrinho-limpar,
+    .carrinho-comprar {
+        width: 89%;
+    }
+
+    .carrinho-fechar {
+        margin-right: 3rem;
+        margin-top: -0.5rem;
+    }
+
+    .carrinho-sucesso {
+        margin-left: -3rem;
+        font-size: 1.3rem;
+    }
+
+    .carrinho-nome {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 5rem;
+        padding-left: 1rem;
+    }
+
+    .ul-nav {
+        display: none;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #home,
+    #carro {
+        display: block;
+    }
+
+    .icones-nav {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+        width: 3.5rem;
+    }
+
+    .ul-nav.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(228, 240, 255);
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .form-hero input {
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .form-hero::before {
+        width: 19rem;
+        right: -2rem;
+        top: 95%;
+    }
+
+    .botao-hero {
+        right: 19.75rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 80%;
+    }
+
+    .hero img {
+        width: 1.1rem;
+        height: 1.1rem
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+        width: 22rem;
+        padding-left: 2.4rem;
+    }
+
+    .quebra {
+        display: none;
+    }
+
+    .cards {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cards-viewport {
+        width: calc(2 * 16rem + 1 * 2rem);
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .seta {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    #seta-direita {
+        margin-right: 2.15rem;
+    }
+
+    .diferencial h2 {
+        font-size: 3rem;
+    }
+
+    .grid-diferencial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card_mat p {
+        padding: 0rem 0rem;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .diferencial h3 {
+        font-size: 2rem;
+    }
+
+    #Mat {
+        padding-left: 0.5rem;
+    }
+
+    #icone_mat {
+        width: 5rem;
+        height: 5rem;
+        padding-left: 3.5rem;
+        bottom: 0.7rem;
+    }
+
+    #icone_pers {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    #Pers {
+        padding-left: 0.5rem;
+    }
+
+    #Facil {
+        padding-left: 0.5rem;
+    }
+
+    #icone_facil {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1.25rem;
+        top: -1.5rem;
+    }
+
+    .depoimento_texto {
+        display: none;
+    }
+
+    .depoimento h2 {
+        font-size: 2rem;
+        width: 20rem;
+        margin-left: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .depoimento_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0 1.5rem;
+        position: relative;
+        color: #000000;
+        font-family: "Snippet", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25rem;
+        background-image: url("imagens_canoodles/iPhone\ 17\ -\ 1.png");
+        background-size: contain;
+        background-position: 10% center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 90rem;
+        aspect-ratio: 519 / 1518;
+        margin: 0 auto;
+    }
+
+    .depoimento_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+    }
+
+    .texto_depoimento {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .nome_depoimento {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #texto_piscina {
+        width: 12.5rem;
+        margin-top: 12rem;
+        margin-right: 2rem;
+    }
+
+    #nome_piscina {
+        margin-top: -20rem;
+        margin-left: 2rem;
+    }
+
+    #texto_formatura {
+        width: 14rem;
+        margin-top: 33rem;
+        margin-right: 2rem;
+    }
+
+    #nome_formatura {
+        margin-top: 2.5rem;
+        margin-right: 6rem;
+    }
+
+    #texto_canudo {
+        width: 17rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+
+    #nome_canudo {
+        margin-top: 4.3rem;
+        margin-left: 7.3rem;
+    }
+
+    .compra {
+        min-height: 80rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .grid-compra {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2.5rem auto 2.5rem 3%;
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+    .item img {
+        width: 100%;
+        height: 8rem;
+        border-radius: 0.75rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .avaliacao {
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .form-pesquisa input {
+        font-size: 1.25rem;
+        padding-left: 0.6rem;
+    }
+
+    .form-pesquisa button {
+        font-size: 1rem;
+    }
+
+    .form-pesquisa button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .botãofiltro {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .botãofiltro img {
+        width: 1.3rem;
+        height: 0.4rem;
+        padding-left: 0.6rem;
+    }
+
+    .botãomais {
+        top: 3rem;
+        left: auto;
+        right: 0.5rem;
+    }
+
+    .botãomais img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nome-produto {
+        width: 10rem;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        padding-left: 0.25rem;
+    }
+
+    .preço {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        padding-left: 0.25rem;
+    }
+
+    .classificação {
+        font-size: 0.75rem;
+        line-height: 1;
+        margin: 0.125rem;
+        padding-left: 0.25rem;
+    }
+
+    .estrelas {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        padding-left: 0.25rem;
+    }
+
+    .números {
+        gap: 1rem;
+        margin: 4rem 0;
+    }
+
+    .números ul {
+        gap: 1.5rem;
+    }
+
+    .números li {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .números img {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .coluna_esquerda,
+    .coluna_direita {
+        display: contents;
+    }
+
+    footer h2 {
+        order: 1;
+    }
+
+    .ContTitle {
+        width: auto;
+        font-size: 1.75rem;
+    }
+
+    .contato {
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .forms-contato {
+        flex: 1;
+        min-width: 12rem;
+    }
+
+    .info_conta {
+        order: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    #minha_conta {
+        margin-top: 0;
+        width: auto;
+    }
+
+    .conta {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .conta p {
+        font-size: 1.75rem
+    }
+
+    .redes_sociais {
+        flex-wrap: wrap;
+        gap: 1rem;
+        order: 4;
+        margin-top: 0;
+    }
+
+    .botao-footer {
+        order: 5;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        padding: 0rem 2rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .contato input {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .form_canudo::before {
+        width: 21rem;
+        margin-top: 0rem;
+    }
+
+    .form_canudo {
+        margin-left: 1rem;
+        width: 55%;
+    }
+
+    .form_numero {
+        margin-left: 1rem;
+        top: 0;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .form_numero input {
+        width: 40%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        height: 1.25rem;
+    }
+
+    .botao-enviar {
+        font-size: 1.5rem;
+        padding: 0.6rem 1.25rem;
+    }
+
+    .form_mensagem {
+        width: 55%;
+        margin-left: -2rem;
+    }
+
+    .contato-feedback {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    #siga_nos {
+        margin-top: 0;
+    }
+
+    .redes_sociais a {
+        margin-top: 0;
+    }
+
+    #login:hover::after {
+        width: 100%;
+    }
+
+    .carrinho-painel {
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .carrinho-limpar,
+    .carrinho-comprar {
+        width: 65%;
+    }
+
+    .carrinho-fechar {
+        margin-right: 9rem;
+        margin-top: -0.5rem;
+    }
+
+    .carrinho-sucesso {
+        margin-left: -8rem;
+        font-size: 1.3rem;
+    }
+
+    .carrinho-nome {
+        width: 70%;
+    }
+
+}
